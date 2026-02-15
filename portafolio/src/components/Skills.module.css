@@ -1,0 +1,59 @@
+.skillsSection {
+  padding: 4rem 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #2e3440; /* Línea sutil separadora */
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.categoryCard {
+  background: rgba(26, 28, 37, 0.5); /* Semi-transparente */
+  border: 1px solid #3b4252;
+  border-radius: 6px;
+  padding: 1.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.categoryCard:hover {
+  border-color: var(--accent); /* Se ilumina al pasar el mouse */
+}
+
+.catTitle {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  margin-bottom: 0.5rem;
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+
+.bullet {
+  color: var(--accent);
+  margin-right: 8px;
+  font-weight: bold;
+}

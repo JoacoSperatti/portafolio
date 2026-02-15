@@ -1,0 +1,153 @@
+/* =========================================
+   VARIABLES & THEME (Nord Inspired)
+   ========================================= */
+:root {
+  /* Fondos */
+  --bg-main: #2e3440;    /* Fondo principal oscuro */
+  --bg-card: #3b4252;    /* Fondo de tarjetas */
+  --bg-hover: #434c5e;   /* Fondo al pasar el mouse */
+
+  /* Textos */
+  --text-main: #eceff4;  /* Blanco hielo */
+  --text-dim: #d8dee9;   /* Gris claro */
+  --text-muted: #4c566a; /* Gris oscuro para detalles */
+
+  /* Acentos */
+  --accent: #88c0d0;     /* Cyan (Nord Frost) */
+  --accent-secondary: #81a1c1; /* Azul suave */
+  --border: #4c566a;     /* Color de bordes */
+}
+
+/* =========================================
+   RESET & BASICS
+   ========================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth; /* Desplazamiento suave al navegar */
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased; /* Texto más nítido */
+}
+
+/* =========================================
+   LAYOUT UTILITIES
+   ========================================= */
+.container {
+  max-width: 1100px; /* Ancho máximo para que no se estire en monitores grandes */
+  margin: 0 auto;    /* Centrado horizontal */
+  padding: 0 2rem;   /* Espacio a los costados */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Empuja el footer hacia abajo */
+}
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace; /* Fuente terminal */
+}
+
+.logo {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1.1rem;
+  letter-spacing: -0.5px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* =========================================
+   SECCIONES & TÍTULOS
+   ========================================= */
+.section-proyectos {
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: var(--text-main);
+  border-left: 4px solid var(--accent); /* Línea vertical estética */
+  padding-left: 1rem;
+  font-weight: 700;
+}
+
+/* =========================================
+   GRID SYSTEM (Para Proyectos)
+   ========================================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.footer {
+  text-align: center;
+  padding: 3rem 0;
+  margin-top: 4rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* =========================================
+   RESPONSIVE (Móvil)
+   ========================================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  
+  .nav-links {
+    gap: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+}

@@ -1,0 +1,34 @@
+.card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #2e3440;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.techStack {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.tag {
+  font-size: 0.8rem;
+  background: #242933;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: var(--accent);
+}
+
+.link {
+  color: var(--text-main);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
