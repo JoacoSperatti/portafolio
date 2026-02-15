@@ -47,13 +47,15 @@ body {
    LAYOUT UTILITIES
    ========================================= */
 .container {
-  max-width: 1100px; /* Ancho máximo prolijo */
-  margin: 0 auto;    /* ESTO ES LA CLAVE: Centra la página horizontalmente */
-  padding: 0 2rem;
+  max-width: 1100px; /* Ancho máximo estándar */
+  margin: 0 auto;    /* ESTO centra el bloque horizontalmente */
+  padding: 0 2rem;   /* Margen interno para que no toque los bordes en celular */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
+/* ... el resto de tus estilos (navbar, footer, etc.) siguen igual ... */
 
 main {
   flex: 1; /* Empuja el footer hacia abajo */

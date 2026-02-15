@@ -1,8 +1,8 @@
-import React from 'react';
-import Hero from './components/Hero';
-import Skills from './components/Skills';
-import ProjectCard from './components/ProjectCard';
-import './App.css';
+import React from "react";
+import Hero from "./components/Hero";
+import Skills from "./components/Skills";
+import ProjectCard from "./components/ProjectCard";
+import "./App.css";
 
 function App() {
   const proyectos = [
@@ -24,14 +24,14 @@ function App() {
       titulo: "Task Manager Minimalista",
       desc: "Aplicación de productividad enfocada en la manipulación eficiente del DOM y persistencia local.",
       tech: ["JavaScript Vanilla", "CSS Modules", "Local Storage"],
-      link: "https://github.com/JoacoSperatti/Proyecto-JavaScript"
+      link: "https://github.com/JoacoSperatti/Proyecto-JavaScript",
     },
     {
       titulo: "API Rest E-commerce (WIP)",
       desc: "Backend escalable con autenticación JWT, manejo de roles y documentación automática.",
       tech: ["Python", "FastAPI", "Docker", "Swagger"],
-      link: "https://github.com/JoacoSperatti/Proyecto"
-    }
+      link: "https://github.com/JoacoSperatti/Proyecto",
+    },
   ];
 
   return (
@@ -39,9 +39,15 @@ function App() {
       <nav className="navbar">
         <span className="logo">viking@arch:~</span>
         <ul className="nav-links">
-          <li><a href="#skills">Stack</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="mailto:tu-email@gmail.com">Contacto</a></li>
+          <li>
+            <a href="#skills">Stack</a>
+          </li>
+          <li>
+            <a href="#proyectos">Proyectos</a>
+          </li>
+          <li>
+            <a href="mailto:tu-email@gmail.com">Contacto</a>
+          </li>
         </ul>
       </nav>
 
@@ -63,7 +69,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <p>© {new Date().getFullYear()} Joaquín Speratti. Built with React on Arch Linux.</p>
+        <p>© {new Date().getFullYear()} Joaquín Speratti. Built with React.</p>
       </footer>
     </div>
   );

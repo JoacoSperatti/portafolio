@@ -2,20 +2,21 @@
   padding: 80px 0;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Esto lo centra verticalmente (arriba/abajo), está bien */
+  justify-content: center; /* Centrado vertical (arriba/abajo) */
   min-height: 60vh;
-
-  /* ESTO ES LO QUE FORZA LA IZQUIERDA: */
-  align-items: flex-start;
+  
+  /* FUERZA LA IZQUIERDA: */
+  align-items: flex-start; 
   text-align: left;
-  width: 100%; /* Asegura que ocupe todo el ancho disponible */
-}
-
-/* Y agregá esto para asegurarnos que el contenedor interno no moleste */
-.content {
-  max-width: 800px; /* Opcional: para que las líneas de texto no sean eternas */
   width: 100%;
 }
+
+.content {
+  max-width: 800px; /* Evita que las líneas de texto sean infinitas en pantallas wide */
+  width: 100%;
+}
+
+/* ... mantené el resto de tus estilos (.title, .accent, etc.) ... */
 
 .command {
   font-family: "JetBrains Mono", "Fira Code", monospace;
