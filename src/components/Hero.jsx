@@ -13,9 +13,8 @@ const Hero = () => {
           Estudiante de Ingeniería en Sistemas | Trainee Dev.
         </p>
         <p className={styles.description}>
-          Apasionado por la eficiencia de <strong>Linux</strong>, el desarrollo
-          con
-          <strong> React</strong> y la resolución de problemas complejos a
+          Apasionado por la eficiencia de <strong>React</strong> para el desarrollo
+          web con la finalidad de lograr la resolución de problemas complejos a
           través de la lógica. Actualmente enfocado en construir sitios web
           practicos y esteticos.
         </p>

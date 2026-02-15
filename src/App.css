@@ -3,19 +3,19 @@
    ========================================= */
 :root {
   /* Fondos */
-  --bg-main: #2e3440;    /* Fondo principal oscuro */
-  --bg-card: #3b4252;    /* Fondo de tarjetas */
-  --bg-hover: #434c5e;   /* Fondo al pasar el mouse */
+  --bg-main: #2e3440; /* Fondo principal oscuro */
+  --bg-card: #3b4252; /* Fondo de tarjetas */
+  --bg-hover: #434c5e; /* Fondo al pasar el mouse */
 
   /* Textos */
-  --text-main: #eceff4;  /* Blanco hielo */
-  --text-dim: #d8dee9;   /* Gris claro */
+  --text-main: #eceff4; /* Blanco hielo */
+  --text-dim: #d8dee9; /* Gris claro */
   --text-muted: #4c566a; /* Gris oscuro para detalles */
 
   /* Acentos */
-  --accent: #88c0d0;     /* Cyan (Nord Frost) */
+  --accent: #88c0d0; /* Cyan (Nord Frost) */
   --accent-secondary: #81a1c1; /* Azul suave */
-  --border: #4c566a;     /* Color de bordes */
+  --border: #4c566a; /* Color de bordes */
 }
 
 /* =========================================
@@ -34,7 +34,11 @@ html {
 body {
   background-color: var(--bg-main);
   color: var(--text-main);
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased; /* Texto más nítido */
 }
@@ -43,9 +47,9 @@ body {
    LAYOUT UTILITIES
    ========================================= */
 .container {
-  max-width: 1100px; /* Ancho máximo para que no se estire en monitores grandes */
-  margin: 0 auto;    /* Centrado horizontal */
-  padding: 0 2rem;   /* Espacio a los costados */
+  max-width: 1100px; /* Ancho máximo prolijo */
+  margin: 0 auto;    /* ESTO ES LA CLAVE: Centra la página horizontalmente */
+  padding: 0 2rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -63,7 +67,7 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
-  font-family: 'JetBrains Mono', 'Fira Code', monospace; /* Fuente terminal */
+  font-family: "JetBrains Mono", "Fira Code", monospace; /* Fuente terminal */
 }
 
 .logo {
@@ -125,7 +129,7 @@ main {
   border-top: 1px solid var(--border);
   color: var(--text-muted);
   font-size: 0.85rem;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
 }
 
 /* =========================================
@@ -137,7 +141,7 @@ main {
     gap: 1.5rem;
     padding-bottom: 1rem;
   }
-  
+
   .nav-links {
     gap: 1.5rem;
     font-size: 0.9rem;
@@ -146,7 +150,7 @@ main {
   .container {
     padding: 0 1.5rem;
   }
-  
+
   .section-title {
     font-size: 1.75rem;
   }
