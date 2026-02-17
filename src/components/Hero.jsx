@@ -16,7 +16,7 @@ const Hero = () => {
           Apasionado por la eficiencia de <strong>React</strong> para el desarrollo
           web con la finalidad de lograr la resolución de problemas complejos a
           través de la lógica. Actualmente enfocado en construir sitios web
-          practicos y esteticos.
+          prácticos y estéticos.
         </p>
         <div className={styles.buttons}>
           <a href="#proyectos" className={styles.primaryBtn}>
