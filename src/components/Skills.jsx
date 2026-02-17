@@ -4,16 +4,16 @@ import styles from "./Skills.module.css";
 const Skills = () => {
   const categories = [
     {
-      title: "Backend & Lenguajes",
-      items: ["Node.js", "Express", "Python", "JavaScript (ES6+)"],
+      title: "Frontend & UI",
+      items: ["React", "CSS Modules", "HTML5", "Sass"],
     },
     {
-      title: "Frontend & UI",
-      items: ["React", "CSS Modules", "HTML5", "Tailwind (Básico)"],
+      title: "Backend & Lenguajes",
+      items: ["Node.js", "C++", "Python", "JavaScript"],
     },
     {
       title: "Database & Tools",
-      items: ["PostgreSQL", "MongoDB", "Git/GitHub", "Docker"],
+      items: ["Firestore", "Git/GitHub"],
     },
     {
       title: "Linux & Workflow",

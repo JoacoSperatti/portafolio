@@ -10,7 +10,7 @@ const Hero = () => {
           Joaquín <span className={styles.accent}>Speratti</span>
         </h1>
         <p className={styles.subtitle}>
-          Estudiante de Ingeniería en Sistemas | Trainee Dev.
+          Estudiante de Ingeniería en Sistemas | Front-End Dev.
         </p>
         <p className={styles.description}>
           Apasionado por la eficiencia de <strong>React</strong> para el desarrollo

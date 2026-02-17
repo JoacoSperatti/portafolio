@@ -26,12 +26,6 @@ function App() {
       tech: ["JavaScript Vanilla", "CSS Modules", "Local Storage"],
       link: "https://github.com/JoacoSperatti/Proyecto-JavaScript",
     },
-    {
-      titulo: "API Rest E-commerce (WIP)",
-      desc: "Backend escalable con autenticación JWT, manejo de roles y documentación automática.",
-      tech: ["Python", "FastAPI", "Docker", "Swagger"],
-      link: "https://github.com/JoacoSperatti/Proyecto",
-    },
   ];
 
   return (
