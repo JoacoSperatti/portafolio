@@ -2,21 +2,14 @@
   padding: 80px 0;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centrado vertical (arriba/abajo) */
+  justify-content: center;
   min-height: 60vh;
-  
-  /* FUERZA LA IZQUIERDA: */
-  align-items: flex-start; 
-  text-align: left;
-  width: 100%;
 }
 
 .content {
-  max-width: 800px; /* Evita que las líneas de texto sean infinitas en pantallas wide */
+  max-width: 800px;
   width: 100%;
 }
-
-/* ... mantené el resto de tus estilos (.title, .accent, etc.) ... */
 
 .command {
   font-family: "JetBrains Mono", "Fira Code", monospace;
@@ -88,7 +81,6 @@
   transform: translateY(-2px);
 }
 
-/* Responsive para celulares */
 @media (max-width: 768px) {
   .title {
     font-size: 2.5rem;
@@ -96,4 +88,18 @@
   .subtitle {
     font-size: 1.2rem;
   }
+}
+
+.profilePic {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent);
+  box-shadow: 0 0 20px rgba(15, 13, 113, 0.3);
+}
+
+.imageContainer {
+  margin-left: 740px;
+  margin-top: -340px;
 }

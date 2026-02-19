@@ -3,6 +3,8 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import ProjectCard from "./components/ProjectCard";
 import "./App.css";
+import imgPowerFit from "./assets/powerFit.jpg"
+import imgGestorTareas from "./assets/gestorTareas.jpg"
 
 function App() {
   const proyectos = [
@@ -18,13 +20,18 @@ function App() {
         "SweetAlert2",
         "CSS3",
       ],
-      link: "https://github.com/JoacoSperatti/Proyecto-React",
+      image: imgPowerFit,
+      git: "https://github.com/JoacoSperatti/Proyecto-React",
+      page: "https://powerfit-suplementos.vercel.app/"
     },
     {
       titulo: "Task Manager Minimalista",
       desc: "Aplicación de productividad enfocada en la manipulación eficiente del DOM y persistencia local.",
       tech: ["JavaScript Vanilla", "CSS Modules", "Local Storage"],
       link: "https://github.com/JoacoSperatti/Proyecto-JavaScript",
+      image: imgGestorTareas,
+      git: "https://github.com/JoacoSperatti/Proyecto-JavaScript",
+      page: "https://proyecto-java-script-peach.vercel.app/"
     },
   ];
 
@@ -40,7 +47,7 @@ function App() {
             <a href="#proyectos">Proyectos</a>
           </li>
           <li>
-            <a href="mailto:tu-email@gmail.com">Contacto</a>
+            <a href="mailto:joaquin.speratti@gmail.com">Contacto</a>
           </li>
         </ul>
       </nav>

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.css";
+import fotoPerfil from "../assets/fotoPerfil.jpg"
 
 const Hero = () => {
   return (
@@ -13,10 +14,10 @@ const Hero = () => {
           Estudiante de Ingeniería en Sistemas | Front-End Dev.
         </p>
         <p className={styles.description}>
-          Apasionado por la eficiencia de <strong>React</strong> para el desarrollo
-          web con la finalidad de lograr la resolución de problemas complejos a
-          través de la lógica. Actualmente enfocado en construir sitios web
-          prácticos y estéticos.
+          Apasionado por la eficiencia de <strong>React</strong> para el
+          desarrollo web con la finalidad de lograr la resolución de problemas
+          complejos a través de la lógica. Actualmente enfocado en construir
+          sitios web prácticos y estéticos.
         </p>
         <div className={styles.buttons}>
           <a href="#proyectos" className={styles.primaryBtn}>
@@ -26,6 +27,13 @@ const Hero = () => {
             Descargar CV
           </a>
         </div>
+      </div>
+      <div className={styles.imageContainer}>
+        <img
+          src={fotoPerfil}
+          alt="Joaquín Speratti"
+          className={styles.profilePic}
+        />
       </div>
     </section>
   );
