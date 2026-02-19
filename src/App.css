@@ -156,4 +156,8 @@ main {
   .section-title {
     font-size: 1.75rem;
   }
+  .grid {
+    grid-template-columns: 1fr; 
+    gap: 1.5rem;
+  }
 }
