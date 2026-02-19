@@ -3,8 +3,9 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import ProjectCard from "./components/ProjectCard";
 import "./App.css";
-import imgPowerFit from "./assets/powerFit.jpg"
-import imgGestorTareas from "./assets/gestorTareas.jpg"
+import imgPowerFit from "./assets/powerFit.jpg";
+import imgGestorTareas from "./assets/gestorTareas.jpg";
+import { FaGithub, FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 function App() {
   const proyectos = [
@@ -22,7 +23,7 @@ function App() {
       ],
       image: imgPowerFit,
       git: "https://github.com/JoacoSperatti/Proyecto-React",
-      page: "https://powerfit-suplementos.vercel.app/"
+      page: "https://powerfit-suplementos.vercel.app/",
     },
     {
       titulo: "Task Manager Minimalista",
@@ -31,7 +32,7 @@ function App() {
       link: "https://github.com/JoacoSperatti/Proyecto-JavaScript",
       image: imgGestorTareas,
       git: "https://github.com/JoacoSperatti/Proyecto-JavaScript",
-      page: "https://proyecto-java-script-peach.vercel.app/"
+      page: "https://proyecto-java-script-peach.vercel.app/",
     },
   ];
 
@@ -47,7 +48,7 @@ function App() {
             <a href="#proyectos">Proyectos</a>
           </li>
           <li>
-            <a href="mailto:joaquin.speratti@gmail.com">Contacto</a>
+            <a href="#footer">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -68,8 +69,38 @@ function App() {
           </div>
         </section>
       </main>
+      <footer id="footer" className="footer">
+        <div className="social-links">
+          <a
+            href="https://github.com/tu-usuario"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <FaGithub className="social-icon" />
+          </a>
 
-      <footer className="footer">
+          <a
+            href="https://instagram.com/joacospee"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <FaInstagram className="social-icon" />
+          </a>
+
+          <a
+            href="https://wa.me/1131608396"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+          >
+            <FaWhatsapp className="social-icon" />
+          </a>
+          <a href="mailto:joaquin.speratti@gmail.com" aria-label="Enviar Mail">
+            <FaEnvelope className="social-icon" />
+          </a>
+        </div>
         <p>© {new Date().getFullYear()} Joaquín Speratti. Built with React.</p>
       </footer>
     </div>
