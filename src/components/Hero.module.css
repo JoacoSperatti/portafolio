@@ -95,34 +95,25 @@
   margin-top: -340px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+  .imageContainer {
+    display: none;
+  }
+
   .hero {
-    margin-top: 70px;
+    flex-direction: column; 
+    text-align: center; 
     padding: 40px 0;
-    gap: 2rem;
   }
 
   .content {
+    max-width: 100%;
+    align-items: center; 
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-
-  .imageContainer {
-    margin-top: -700px;
-    margin-left: 160px;
-  }
-
-  .profilePic {
-    width: 200px;
-    height: 200px;
   }
 
   .title {
-    font-size: 2.8rem;
-  }
-
-  .buttons {
-    justify-content: center;
+    font-size: 2.5rem;
   }
 }
