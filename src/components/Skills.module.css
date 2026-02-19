@@ -7,7 +7,7 @@
 .heading {
   font-size: 2rem;
   margin-bottom: 2rem;
-  border-bottom: 2px solid #2e3440; /* Línea sutil separadora */
+  border-bottom: 2px solid #2e3440; 
   display: inline-block;
   padding-bottom: 0.5rem;
 }
@@ -19,7 +19,7 @@
 }
 
 .categoryCard {
-  background: rgba(26, 28, 37, 0.5); /* Semi-transparente */
+  background: rgba(26, 28, 37, 0.5); 
   border: 1px solid #3b4252;
   border-radius: 6px;
   padding: 1.5rem;
@@ -27,7 +27,7 @@
 }
 
 .categoryCard:hover {
-  border-color: var(--accent); /* Se ilumina al pasar el mouse */
+  border-color: var(--accent);
 }
 
 .catTitle {

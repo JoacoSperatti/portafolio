@@ -45,6 +45,18 @@
   transition: 0.3s;
 }
 
+.gitBtn, 
+.gitBtn:visited {
+  color: white; 
+  text-decoration: none;
+}
+
+.gitBtn:hover, 
+.linkBtn:hover {
+  filter: brightness(1.2);
+  color: inherit;
+}
+
 .linkBtn {
   background: var(--accent);
   color: #242424;

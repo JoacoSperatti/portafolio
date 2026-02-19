@@ -1,4 +1,4 @@
-import React from "react"; // Asegúrate de importar React si usas JSX (aunque en Vite nuevo no siempre es obligatorio, es buena práctica)
+import React from "react"; 
 import styles from "./Skills.module.css";
 
 const Skills = () => {
