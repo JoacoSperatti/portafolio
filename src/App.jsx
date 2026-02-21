@@ -10,8 +10,8 @@ import { FaGithub, FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 function App() {
   const proyectos = [
     {
-      titulo: "PowerFit | E-commerce de Suplementos Deportivos",
-      desc: "Single Page Application (SPA) de e-commerce desarrollada con React JS. La aplicación permite a los usuarios navegar por un catálogo de suplementos, filtrar por categorías, ver detalles de productos, gestionar un carrito de compras y finalizar pedidos generando órdenes reales en Firebase Firestore.",
+      titulo: "PowerFit",
+      desc: "E-commerce de Suplementos Deportivos | La aplicación permite a los usuarios navegar por un catálogo de suplementos, filtrar por categorías, ver detalles de productos, gestionar un carrito de compras y finalizar pedidos generando órdenes reales en Firebase Firestore.",
       tech: [
         "React JS",
         "Vite",
