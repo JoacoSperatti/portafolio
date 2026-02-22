@@ -28,7 +28,13 @@ function App() {
     {
       titulo: "Task Manager Minimalista",
       desc: "Aplicación de productividad enfocada en la manipulación eficiente del DOM y persistencia local.",
-      tech: ["JavaScript Vanilla", "CSS Modules", "Local Storage"],
+      tech: [
+        "JavaScript Vanilla",
+        "CSS Modules",
+        "Local Storage",
+        "Toastify",
+        "SweetAlert2",
+      ],
       link: "https://github.com/JoacoSperatti/Proyecto-JavaScript",
       image: imgGestorTareas,
       git: "https://github.com/JoacoSperatti/Proyecto-JavaScript",
