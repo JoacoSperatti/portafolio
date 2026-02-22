@@ -42,7 +42,7 @@ function App() {
         <span className="logo">viking@arch:~</span>
         <ul className="nav-links">
           <li>
-            <a href="#skills">Stack</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
             <a href="#proyectos">Proyectos</a>

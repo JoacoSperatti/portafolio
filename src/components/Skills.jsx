@@ -16,14 +16,14 @@ const Skills = () => {
       items: ["Firestore", "Git/GitHub"],
     },
     {
-      title: "Linux & Workflow",
-      items: ["Arch Linux", "Bash Scripting", "Vim/Neovim", "Hyprland"],
+      title: "Languajes",
+      items: ["Español Nativo 🇦🇷", "Inglés Avanzado 🇬🇧"],
     },
   ];
 
   return (
     <section className={styles.skillsSection}>
-      <h2 className={styles.heading}>Tech Stack</h2>
+      <h2 className={styles.heading}>Skills</h2>
       <div className={styles.grid}>
         {categories.map((cat, idx) => (
           <div key={idx} className={styles.categoryCard}>
