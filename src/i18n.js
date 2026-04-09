@@ -8,19 +8,18 @@ const resources = {
       nav_projects: "Projects",
       nav_contact: "Contact",
       hero_command: "$ whoami",
-      hero_subtitle: "Systems Engineering Student & Full Stack Developer",
-      hero_description: "Focused on building efficient solutions, specialized in <strong>React, Python, and Linux</strong> environments.",
+      hero_subtitle: "Systems Engineering Student | Front-End Dev.",
+      hero_desc: "Passionate about <strong>React</strong> efficiency for web development to solve complex problems through logic. Currently focused on building practical and aesthetic websites.",
       hero_cv: "Download CV",
-      hero_projects: "View Projects",
+      hero_view_projects: "View Projects",
       projects_title: "Featured Projects",
-      project_powerfit_title: "PowerFit | E-commerce",
-      project_powerfit_desc: "E-commerce SPA for sports supplements. Features catalog, filters, shopping cart, and Firebase integration.",
-      project_task_title: "Task Manager",
-      project_task_desc: "Minimalist productivity app focused on DOM manipulation and local persistence.",
-      footer_copy: "Built with React.",
-      tech_catalog: "Catalog",
-      tech_filters: "Filters",
-      tech_persistence: "Local Persistence"
+      project_cuackk_desc: "E-commerce SPA for apparel. Features product catalog, detailed views, shopping cart, and Firebase Firestore integration.",
+      project_powerfit_desc: "Sports supplements store. Includes category filtering, real-time stock management, and interactive UI.",
+      project_bomberos_desc: "Internal management system for fire departments to track fire extinguisher data and maintenance.",
+      project_task_desc: "Minimalist productivity application focused on DOM manipulation and local persistence.",
+      view_code: "Code _",
+      visit_site: "Live Demo",
+      footer_built: "Built with React."
     }
   },
   es: {
@@ -28,27 +27,27 @@ const resources = {
       nav_stack: "Stack",
       nav_projects: "Proyectos",
       nav_contact: "Contacto",
-      hero_command: "$ quién_soy",
-      hero_subtitle: "Estudiante de Ingeniería en Sistemas y Desarrollador Full Stack",
-      hero_description: "Enfocado en la creación de soluciones eficientes, especializado en entornos <strong>React, Python y Linux</strong>.",
+      hero_command: "$ whoami",
+      hero_subtitle: "Estudiante de Ingeniería en Sistemas | Front-End Dev.",
+      hero_desc: "Apasionado por la eficiencia de <strong>React</strong> para el desarrollo web con la finalidad de lograr la resolución de problemas complejos a través de la lógica. Actualmente enfocado en construir sitios web prácticos y estéticos.",
       hero_cv: "Descargar CV",
-      hero_projects: "Ver Proyectos",
+      hero_view_projects: "Ver Proyectos",
       projects_title: "Proyectos Destacados",
-      project_powerfit_title: "PowerFit | E-commerce",
-      project_powerfit_desc: "E-commerce SPA de suplementos deportivos. Incluye catálogo, filtros, carrito de compras e integración con Firebase.",
-      project_task_title: "Gestor de Tareas",
-      project_task_desc: "Aplicación de productividad enfocada en la manipulación del DOM y persistencia local.",
-      footer_copy: "Hecho con React.",
-      tech_catalog: "Catálogo",
-      tech_filters: "Filtros",
-      tech_persistence: "Persistencia Local"
+      project_cuackk_desc: "SPA de E-commerce de indumentaria. Posee catálogo de productos, vista de detalles, carrito de compras e integración con Firebase.",
+      project_powerfit_desc: "Tienda de suplementos deportivos. Incluye filtrado por categorías, gestión de stock en tiempo real y UI interactiva.",
+      project_bomberos_desc: "Sistema de gestión interna para cuarteles de bomberos, enfocado en el control de extintores y mantenimientos.",
+      project_task_desc: "Aplicación de productividad minimalista enfocada en la manipulación del DOM y persistencia local.",
+      view_code: "Ver Código _",
+      visit_site: "Visitar Sitio",
+      footer_built: "Hecho con React."
     }
   }
 };
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: "es",
+  lng: "es", // Idioma inicial
+  fallbackLng: "en",
   interpolation: { escapeValue: false }
 });
 
