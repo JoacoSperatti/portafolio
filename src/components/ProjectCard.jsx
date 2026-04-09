@@ -34,7 +34,7 @@ const ProjectCard = ({ titulo, desc, tech, image, git, page }) => {
             rel="noopener noreferrer" 
             className={styles.linkBtn}
           >
-            Visitar Sitio
+            Visitar Sitio 
           </a>
         )}
       </div>

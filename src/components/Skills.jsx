@@ -5,7 +5,7 @@ const Skills = () => {
   const categories = [
     {
       title: "Frontend & UI",
-      items: ["React", "CSS Modules", "HTML5", "Sass"],
+      items: ["React", "CSS Modules", "HTML5","Tailwind CSS", "Sass"],
     },
     {
       title: "Backend & Lenguajes",
@@ -13,7 +13,7 @@ const Skills = () => {
     },
     {
       title: "Database & Tools",
-      items: ["Firestore", "Git/GitHub"],
+      items: ["Firestore","Supabase", "Electron JS"],
     },
     {
       title: "Languajes",
