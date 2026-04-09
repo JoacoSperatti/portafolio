@@ -114,7 +114,7 @@ function App() {
       <footer id="footer" className="footer">
         <div className="social-links">
           <a
-            href="https://github.com/tu-usuario"
+            href="https://github.com/JoacoSperatti"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -123,7 +123,7 @@ function App() {
           </a>
 
           <a
-            href="https://instagram.com/joacospee"
+            href="https://instagram.com/jsperatti.dev"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
