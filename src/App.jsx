@@ -65,7 +65,7 @@ function App() {
       page: "https://cuackk-store-git-main-joacospees-projects.vercel.app/",
     },
     {
-      titulo: "PowerFit",
+      titulo: "PowerFit [proyecto final de Carrera]",
       desc: "E-commerce de Suplementos Deportivos (proyecto final de carrera desarrollo frontend con React JS) | La aplicación permite a los usuarios navegar por un catálogo de suplementos, filtrar por categorías, ver detalles de productos, gestionar un carrito de compras y finalizar pedidos generando órdenes reales en Firebase Firestore.",
       tech: [
         "React JS + Vite",
@@ -80,7 +80,7 @@ function App() {
       page: "https://powerfit-suplementos.vercel.app/",
     },
     {
-      titulo: "Task Manager",
+      titulo: "Task Manager [proyecto parcial de Carrera]",
       desc: "Task Manager Minimalista (proyecto parcial de carrera desarrollo frontend con React JS) | Aplicación de productividad enfocada en la manipulación eficiente del DOM y persistencia local.",
       tech: [
         "JavaScript Vanilla",
