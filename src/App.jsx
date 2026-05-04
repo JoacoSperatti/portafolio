@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import ProjectCard from "./components/ProjectCard";
+import LanguageSwitcher from "./components/LanguageSwitcher";
 import "./App.css";
 import imgPowerFit from "./assets/powerFit.jpg";
 import imgGestorTareas from "./assets/gestorTareas.jpg";
@@ -9,29 +10,32 @@ import imgcuackkStore from "./assets/cuackkStore.jpg";
 import imgsistContBomb from "./assets/sistContBomb.jpg";
 import imgMiuccha from "./assets/Miuccha.jpg";
 import { FaGithub, FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const { t } = useTranslation();
+
   const proyectos = [
     {
-  titulo: "Miuccha Handmade Shoes",
-  desc: "E-commerce de Calzado de Autor | Tienda online de alta gama para una marca de calzado independiente. Desarrollé una experiencia de usuario minimalista con gestión dinámica de stock por talle y color, galería de imágenes optimizada y un flujo de checkout automatizado hacia WhatsApp para concretar ventas personalizadas.",
-  tech: [
-    "React JS + Vite",
-    "Firestore (Firebase)",
-    "React Router Dom",
-    "Tailwind CSS",
-    "SweetAlert2",
-    "Swiper JS",
-    "React Icons",
-    "Vercel Deployment"
-  ],
-  image: imgMiuccha, 
-  git: "https://github.com/JoacoSperatti/miuccha",
-  page: "https://miuccha.vercel.app/",
-},
+      titulo: "Miuccha Handmade Shoes",
+      desc: t("project_miuccha_desc"),
+      tech: [
+        "React JS + Vite",
+        "Firestore (Firebase)",
+        "React Router Dom",
+        "Tailwind CSS",
+        "SweetAlert2",
+        "Swiper JS",
+        "React Icons",
+        "Vercel Deployment"
+      ],
+      image: imgMiuccha, 
+      git: "https://github.com/JoacoSperatti/miuccha",
+      page: "https://miuccha.vercel.app/",
+    },
     {
       titulo: "Sistema de Rifas - BVI",
-      desc: "Sistema de Gestión y Auditoría de Rifas | Software a medida diseñado para la gestión integral de campañas de recaudación. La aplicación evolucionó de un registro básico a una plataforma robusta de auditoría financiera, permitiendo el control estricto de miles de números de rifas, seguimiento de pagos y control de tesorería en tiempo real.",
+      desc: t("project_rifas_desc"),
       tech: [
         "React JS + Vite",
         "Electron JS",
@@ -48,7 +52,7 @@ function App() {
     },
     {
       titulo: "CuackkStore",
-      desc: "E-commerce de Productos Artesanales | Plataforma de comercio electrónico integral para un emprendimiento de productos tejidos a crochet. El objetivo principal fue digitalizar el proceso de venta, permitiendo una personalización profunda de los productos y automatizando la gestión de inventario y pedidos.",
+      desc: t("project_cuackk_desc"),
       tech: [
         "React JS + Vite",
         "Firestore (Firebase)",
@@ -65,8 +69,8 @@ function App() {
       page: "https://cuackk-store-git-main-joacospees-projects.vercel.app/",
     },
     {
-      titulo: "PowerFit [proyecto final de Carrera]",
-      desc: "E-commerce de Suplementos Deportivos (proyecto final de carrera desarrollo frontend con React JS) | La aplicación permite a los usuarios navegar por un catálogo de suplementos, filtrar por categorías, ver detalles de productos, gestionar un carrito de compras y finalizar pedidos generando órdenes reales en Firebase Firestore.",
+      titulo: "PowerFit [proyecto final de carrera]",
+      desc: t("project_powerfit_desc"),
       tech: [
         "React JS + Vite",
         "Firestore (Firebase)",
@@ -80,8 +84,8 @@ function App() {
       page: "https://powerfit-suplementos.vercel.app/",
     },
     {
-      titulo: "Task Manager [proyecto parcial de Carrera]",
-      desc: "Task Manager Minimalista (proyecto parcial de carrera desarrollo frontend con React JS) | Aplicación de productividad enfocada en la manipulación eficiente del DOM y persistencia local.",
+      titulo: "Task Manager [proyecto parcial de carrera]",
+      desc: t("project_task_desc"),
       tech: [
         "JavaScript Vanilla",
         "CSS Modules",
@@ -89,7 +93,6 @@ function App() {
         "Toastify",
         "SweetAlert2",
       ],
-      link: "https://github.com/JoacoSperatti/Proyecto-JavaScript",
       image: imgGestorTareas,
       git: "https://github.com/JoacoSperatti/Proyecto-JavaScript",
       page: "https://proyecto-java-script-peach.vercel.app/",
@@ -102,13 +105,16 @@ function App() {
         <span className="logo">viking@arch:~</span>
         <ul className="nav-links">
           <li>
-            <a href="#skills">Skills</a>
+            <a href="#skills">{t("nav_stack")}</a>
           </li>
           <li>
-            <a href="#proyectos">Proyectos</a>
+            <a href="#proyectos">{t("nav_projects")}</a>
           </li>
           <li>
-            <a href="#footer">Contacto</a>
+            <a href="#footer">{t("nav_contact")}</a>
+          </li>
+          <li>
+            <LanguageSwitcher />
           </li>
         </ul>
       </nav>
@@ -121,7 +127,7 @@ function App() {
         </div>
 
         <section id="proyectos" className="section-proyectos">
-          <h2 className="section-title">Proyectos Destacados</h2>
+          <h2 className="section-title">{t("projects_title")}</h2>
           <div className="grid">
             {proyectos.map((p, index) => (
               <ProjectCard key={index} {...p} />
@@ -161,7 +167,7 @@ function App() {
             <FaEnvelope className="social-icon" />
           </a>
         </div>
-        <p>© {new Date().getFullYear()} Joaquín Speratti. Built with React.</p>
+        <p>© {new Date().getFullYear()} Joaquín Speratti. {t("footer_built")}</p>
       </footer>
     </div>
   );

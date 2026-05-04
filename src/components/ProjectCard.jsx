@@ -1,6 +1,9 @@
 import styles from './ProjectCard.module.css';
+import { useTranslation } from "react-i18next";
 
 const ProjectCard = ({ titulo, desc, tech, image, git, page }) => {
+  const { t } = useTranslation();
+
   return (
     <article className={styles.card}>
       <h3>{titulo}</h3>
@@ -23,7 +26,7 @@ const ProjectCard = ({ titulo, desc, tech, image, git, page }) => {
             rel="noopener noreferrer" 
             className={styles.gitBtn}
           >
-            Ver Código _
+            {t("view_code")}
           </a>
         )}
         
@@ -34,7 +37,7 @@ const ProjectCard = ({ titulo, desc, tech, image, git, page }) => {
             rel="noopener noreferrer" 
             className={styles.linkBtn}
           >
-            Visitar Sitio 
+            {t("visit_site")}
           </a>
         )}
       </div>

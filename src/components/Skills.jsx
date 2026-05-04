@@ -1,29 +1,32 @@
 import React from "react"; 
 import styles from "./Skills.module.css";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   const categories = [
     {
-      title: "Frontend & UI",
+      title: t("skills_frontend"),
       items: ["React", "CSS Modules", "HTML5","Tailwind CSS", "Sass"],
     },
     {
-      title: "Backend & Lenguajes",
+      title: t("skills_backend"),
       items: ["Node.js", "C++", "Python", "JavaScript"],
     },
     {
-      title: "Database & Tools",
+      title: t("skills_db"),
       items: ["Firestore","Supabase", "Electron JS"],
     },
     {
-      title: "Languajes",
-      items: ["Español Nativo 🇦🇷", "Inglés Avanzado 🇬🇧"],
+      title: t("skills_lang_cat"),
+      items: [t("lang_es"), t("lang_en")],
     },
   ];
 
   return (
     <section className={styles.skillsSection}>
-      <h2 className={styles.heading}>Skills</h2>
+      <h2 className={styles.heading}>{t("skills_title")}</h2>
       <div className={styles.grid}>
         {categories.map((cat, idx) => (
           <div key={idx} className={styles.categoryCard}>

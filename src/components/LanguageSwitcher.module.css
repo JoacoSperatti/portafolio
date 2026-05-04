@@ -1,0 +1,23 @@
+.langBtn {
+  background: transparent;
+  border: 1px solid var(--accent-color, #64ffda);
+  color: var(--accent-color, #64ffda);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Fira Code", monospace;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+}
+
+.langBtn:hover {
+  background: rgba(100, 255, 218, 0.1);
+}
+
+@media (max-width: 768px) {
+  .langBtn {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}

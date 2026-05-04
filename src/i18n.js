@@ -13,13 +13,21 @@ const resources = {
       hero_cv: "Download CV",
       hero_view_projects: "View Projects",
       projects_title: "Featured Projects",
+      project_miuccha_desc: "E-commerce for high-end handmade shoes. Features minimalist UI, dynamic stock management, optimized gallery, and automated WhatsApp checkout.",
       project_cuackk_desc: "E-commerce SPA for apparel. Features product catalog, detailed views, shopping cart, and Firebase Firestore integration.",
       project_powerfit_desc: "Sports supplements store. Includes category filtering, real-time stock management, and interactive UI.",
-      project_bomberos_desc: "Internal management system for fire departments to track fire extinguisher data and maintenance.",
+      project_rifas_desc: "Custom management and auditing software for fundraising campaigns. Real-time financial tracking and inventory control.",
       project_task_desc: "Minimalist productivity application focused on DOM manipulation and local persistence.",
       view_code: "Code _",
       visit_site: "Live Demo",
-      footer_built: "Built with React."
+      footer_built: "Built with React.",
+      skills_title: "Skills",
+      skills_frontend: "Frontend & UI",
+      skills_backend: "Backend & Languages",
+      skills_db: "Database & Tools",
+      skills_lang_cat: "Languages",
+      lang_es: "Native Spanish 🇦🇷",
+      lang_en: "Advanced English 🇬🇧"
     }
   },
   es: {
@@ -33,13 +41,21 @@ const resources = {
       hero_cv: "Descargar CV",
       hero_view_projects: "Ver Proyectos",
       projects_title: "Proyectos Destacados",
+      project_miuccha_desc: "E-commerce de calzado de autor. Presenta una interfaz minimalista, gestión dinámica de stock, galería optimizada y checkout automatizado por WhatsApp.",
       project_cuackk_desc: "SPA de E-commerce de indumentaria. Posee catálogo de productos, vista de detalles, carrito de compras e integración con Firebase.",
       project_powerfit_desc: "Tienda de suplementos deportivos. Incluye filtrado por categorías, gestión de stock en tiempo real y UI interactiva.",
-      project_bomberos_desc: "Sistema de gestión interna para cuarteles de bomberos, enfocado en el control de extintores y mantenimientos.",
+      project_rifas_desc: "Software a medida para la gestión y auditoría de campañas de recaudación. Seguimiento financiero y control de inventario en tiempo real.",
       project_task_desc: "Aplicación de productividad minimalista enfocada en la manipulación del DOM y persistencia local.",
       view_code: "Ver Código _",
       visit_site: "Visitar Sitio",
-      footer_built: "Hecho con React."
+      footer_built: "Hecho con React.",
+      skills_title: "Skills",
+      skills_frontend: "Frontend & UI",
+      skills_backend: "Backend & Lenguajes",
+      skills_db: "Database & Tools",
+      skills_lang_cat: "Idiomas",
+      lang_es: "Español Nativo 🇦🇷",
+      lang_en: "Inglés Avanzado 🇬🇧"
     }
   }
 };
