@@ -7,10 +7,28 @@ import imgPowerFit from "./assets/powerFit.jpg";
 import imgGestorTareas from "./assets/gestorTareas.jpg";
 import imgcuackkStore from "./assets/cuackkStore.jpg";
 import imgsistContBomb from "./assets/sistContBomb.jpg";
+import imgMiuccha from "./assets/Miuccha.jpg";
 import { FaGithub, FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 function App() {
   const proyectos = [
+    {
+  titulo: "Miuccha Zapatos",
+  desc: "E-commerce de Calzado de Autor | Tienda online de alta gama para una marca de calzado independiente. Desarrollé una experiencia de usuario minimalista con gestión dinámica de stock por talle y color, galería de imágenes optimizada y un flujo de checkout automatizado hacia WhatsApp para concretar ventas personalizadas.",
+  tech: [
+    "React JS + Vite",
+    "Firestore (Firebase)",
+    "React Router Dom",
+    "Tailwind CSS",
+    "SweetAlert2",
+    "Swiper JS",
+    "React Icons",
+    "Vercel Deployment"
+  ],
+  image: imgMiuccha, 
+  git: "https://github.com/JoacoSperatti/miuccha",
+  page: "https://miuccha.vercel.app/",
+},
     {
       titulo: "Sistema de Rifas - BVI",
       desc: "Sistema de Gestión y Auditoría de Rifas | Software a medida diseñado para la gestión integral de campañas de recaudación. La aplicación evolucionó de un registro básico a una plataforma robusta de auditoría financiera, permitiendo el control estricto de miles de números de rifas, seguimiento de pagos y control de tesorería en tiempo real.",
