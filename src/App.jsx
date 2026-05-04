@@ -13,7 +13,7 @@ import { FaGithub, FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 function App() {
   const proyectos = [
     {
-  titulo: "Miuccha Zapatos",
+  titulo: "Miuccha Handmade Shoes",
   desc: "E-commerce de Calzado de Autor | Tienda online de alta gama para una marca de calzado independiente. Desarrollé una experiencia de usuario minimalista con gestión dinámica de stock por talle y color, galería de imágenes optimizada y un flujo de checkout automatizado hacia WhatsApp para concretar ventas personalizadas.",
   tech: [
     "React JS + Vite",
