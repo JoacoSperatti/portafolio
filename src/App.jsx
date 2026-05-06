@@ -8,97 +8,114 @@ import imgPowerFit from "./assets/powerFit.jpg";
 import imgGestorTareas from "./assets/gestorTareas.jpg";
 import imgcuackkStore from "./assets/cuackkStore.jpg";
 import imgsistContBomb from "./assets/sistContBomb.jpg";
+import imgIslaNerga from "./assets/IslaNegra.jpg";
 import imgMiuccha from "./assets/Miuccha.jpg";
 import { FaGithub, FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
+const getProjects = (t) => [
+  {
+    titulo: t("project_IslaNegra_title"),
+    desc: t("project_IslaNegra_desc"),
+    tech: [
+      "React JS + Vite",
+      "Hostinger",
+      "React Router Dom",
+      "CSS",
+      "React Icons",
+    ],
+    image: imgIslaNerga, 
+    git: "https://github.com/JoacoSperatti/Isla",
+    page: "https://islanegraresto.com/",
+  },
+  {
+    titulo: t("project_miuccha_title"),
+    desc: t("project_miuccha_desc"),
+    tech: [
+      "React JS + Vite",
+      "Firestore (Firebase)",
+      "React Router Dom",
+      "Tailwind CSS",
+      "SweetAlert2",
+      "Swiper JS",
+      "React Icons",
+      "Vercel Deployment"
+    ],
+    image: imgMiuccha, 
+    git: "https://github.com/JoacoSperatti/miuccha",
+    page: "https://www.miuccha.ar/",
+  },
+  {
+    titulo: t("project_rifas_title"),
+    desc: t("project_rifas_desc"),
+    tech: [
+      "React JS + Vite",
+      "Electron JS",
+      "Firestore (Firebase)",
+      "Tailwind CSS",
+      "Recharts (Data Visualization)",
+      "SweetAlert2",
+      "React Router Dom",
+      "SheetJS (XLSX)",
+    ],
+    image: imgsistContBomb,
+    git: "https://github.com/JoacoSperatti/sistContBomb",
+    page: "https://drive.google.com/drive/folders/1FtdHFM-hULwzY2JDPwLXIxPYmwt0KwBT?usp=drive_link",
+  },
+  {
+    titulo: t("project_cuackk_title"),
+    desc: t("project_cuackk_desc"),
+    tech: [
+      "React JS + Vite",
+      "Firestore (Firebase)",
+      "Firebase Auth",
+      "React Router Dom",
+      "Tailwind CSS",
+      "React Context API",
+      "React Hot Toast",
+      "React Icons",
+      "LocalStorage API",
+    ],
+    image: imgcuackkStore,
+    git: "https://github.com/JoacoSperatti/cuackkStore",
+    page: "https://cuackk-store-git-main-joacospees-projects.vercel.app/",
+  },
+  {
+    titulo: t("project_powerfit_title"),
+    desc: t("project_powerfit_desc"),
+    tech: [
+      "React JS + Vite",
+      "Firestore (Firebase)",
+      "React Router Dom",
+      "Toastify",
+      "SweetAlert2",
+      "CSS3",
+    ],
+    image: imgPowerFit,
+    git: "https://github.com/JoacoSperatti/Proyecto-React",
+    page: "https://powerfit-suplementos.vercel.app/",
+  },
+  {
+    titulo: t("project_task_title"),
+    desc: t("project_task_desc"),
+    tech: [
+      "JavaScript Vanilla",
+      "CSS Modules",
+      "Local Storage",
+      "Toastify",
+      "SweetAlert2",
+    ],
+    image: imgGestorTareas,
+    git: "https://github.com/JoacoSperatti/Proyecto-JavaScript",
+    page: "https://proyecto-java-script-peach.vercel.app/",
+  },
+];
+
 function App() {
   const { t } = useTranslation();
+  const proyectos = getProjects(t);
 
-  const proyectos = [
-    {
-      titulo: "Miuccha Handmade Shoes",
-      desc: t("project_miuccha_desc"),
-      tech: [
-        "React JS + Vite",
-        "Firestore (Firebase)",
-        "React Router Dom",
-        "Tailwind CSS",
-        "SweetAlert2",
-        "Swiper JS",
-        "React Icons",
-        "Vercel Deployment"
-      ],
-      image: imgMiuccha, 
-      git: "https://github.com/JoacoSperatti/miuccha",
-      page: "https://miuccha.vercel.app/",
-    },
-    {
-      titulo: "Sistema de Rifas - BVI",
-      desc: t("project_rifas_desc"),
-      tech: [
-        "React JS + Vite",
-        "Electron JS",
-        "Firestore (Firebase)",
-        "Tailwind CSS",
-        "Recharts (Data Visualization)",
-        "SweetAlert2",
-        "React Router Dom",
-        "SheetJS (XLSX)",
-      ],
-      image: imgsistContBomb,
-      git: "https://github.com/JoacoSperatti/sistContBomb",
-      page: "https://drive.google.com/drive/folders/1FtdHFM-hULwzY2JDPwLXIxPYmwt0KwBT?usp=drive_link",
-    },
-    {
-      titulo: "CuackkStore",
-      desc: t("project_cuackk_desc"),
-      tech: [
-        "React JS + Vite",
-        "Firestore (Firebase)",
-        "Firebase Auth",
-        "React Router Dom",
-        "Tailwind CSS",
-        "React Context API",
-        "React Hot Toast",
-        "React Icons",
-        "LocalStorage API",
-      ],
-      image: imgcuackkStore,
-      git: "https://github.com/JoacoSperatti/cuackkStore",
-      page: "https://cuackk-store-git-main-joacospees-projects.vercel.app/",
-    },
-    {
-      titulo: "PowerFit [proyecto final de carrera]",
-      desc: t("project_powerfit_desc"),
-      tech: [
-        "React JS + Vite",
-        "Firestore (Firebase)",
-        "React Router Dom",
-        "Toastify",
-        "SweetAlert2",
-        "CSS3",
-      ],
-      image: imgPowerFit,
-      git: "https://github.com/JoacoSperatti/Proyecto-React",
-      page: "https://powerfit-suplementos.vercel.app/",
-    },
-    {
-      titulo: "Task Manager [proyecto parcial de carrera]",
-      desc: t("project_task_desc"),
-      tech: [
-        "JavaScript Vanilla",
-        "CSS Modules",
-        "Local Storage",
-        "Toastify",
-        "SweetAlert2",
-      ],
-      image: imgGestorTareas,
-      git: "https://github.com/JoacoSperatti/Proyecto-JavaScript",
-      page: "https://proyecto-java-script-peach.vercel.app/",
-    },
-  ];
-
+  
   return (
     <div className="container">
       <nav className="navbar">
