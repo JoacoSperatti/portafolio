@@ -45,15 +45,23 @@
 }
 
 .item {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   color: var(--text-dim);
   font-size: 0.95rem;
   display: flex;
   align-items: center;
+  gap: 10px;
+  transition: transform 0.2s ease;
 }
 
-.bullet {
+.item:hover {
+  transform: translateX(5px);
   color: var(--accent);
-  margin-right: 8px;
-  font-weight: bold;
+}
+
+.icon {
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
 }

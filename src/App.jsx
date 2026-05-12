@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import ProjectCard from "./components/ProjectCard";
+import Diplomas from "./components/Diplomas";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import "./App.css";
 import imgPowerFit from "./assets/powerFit.jpg";
@@ -10,7 +11,7 @@ import imgcuackkStore from "./assets/cuackkStore.jpg";
 import imgsistContBomb from "./assets/sistContBomb.jpg";
 import imgIslaNerga from "./assets/IslaNegra.jpg";
 import imgMiuccha from "./assets/Miuccha.jpg";
-import { FaGithub, FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaWhatsapp, FaEnvelope, FaArrowUp } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 const getProjects = (t) => [
@@ -27,6 +28,7 @@ const getProjects = (t) => [
     image: imgIslaNerga, 
     git: "https://github.com/JoacoSperatti/Isla",
     page: "https://islanegraresto.com/",
+    featured: true,
   },
   {
     titulo: t("project_miuccha_title"),
@@ -44,6 +46,7 @@ const getProjects = (t) => [
     image: imgMiuccha, 
     git: "https://github.com/JoacoSperatti/miuccha",
     page: "https://www.miuccha.ar/",
+    featured: true,
   },
   {
     titulo: t("project_rifas_title"),
@@ -61,6 +64,7 @@ const getProjects = (t) => [
     image: imgsistContBomb,
     git: "https://github.com/JoacoSperatti/sistContBomb",
     page: "https://drive.google.com/drive/folders/1FtdHFM-hULwzY2JDPwLXIxPYmwt0KwBT?usp=drive_link",
+    featured: true,
   },
   {
     titulo: t("project_cuackk_title"),
@@ -79,6 +83,7 @@ const getProjects = (t) => [
     image: imgcuackkStore,
     git: "https://github.com/JoacoSperatti/cuackkStore",
     page: "https://cuackk-store-git-main-joacospees-projects.vercel.app/",
+    featured: true,
   },
   {
     titulo: t("project_powerfit_title"),
@@ -114,10 +119,52 @@ const getProjects = (t) => [
 function App() {
   const { t } = useTranslation();
   const proyectos = getProjects(t);
+  const [showScroll, setShowScroll] = useState(false);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
+  const featuredProjects = proyectos.filter(p => p.featured);
+  const otherProjects = proyectos.filter(p => !p.featured);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScroll(window.scrollY > 400);
+      
+      const reveals = document.querySelectorAll(".reveal");
+      reveals.forEach(reveal => {
+        const windowHeight = window.innerHeight;
+        const revealTop = reveal.getBoundingClientRect().top;
+        const revealPoint = 150;
+        if (revealTop < windowHeight - revealPoint) {
+          reveal.classList.add("active");
+        }
+      });
+    };
+
+    const handleMouseMove = (e) => {
+      setMousePos({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("mousemove", handleMouseMove);
+    handleScroll(); 
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   
   return (
     <div className="container">
+      <div 
+        className="spotlight" 
+        style={{ 
+          background: `radial-gradient(circle at ${mousePos.x}px ${mousePos.y}px, rgba(136, 192, 208, 0.1) 0%, transparent 80%)` 
+        }}
+      ></div>
       <nav className="navbar">
         <span className="logo">viking@arch:~</span>
         <ul className="nav-links">
@@ -126,6 +173,9 @@ function App() {
           </li>
           <li>
             <a href="#proyectos">{t("nav_projects")}</a>
+          </li>
+          <li>
+            <a href="#diplomas">{t("nav_diplomas")}</a>
           </li>
           <li>
             <a href="#footer">{t("nav_contact")}</a>
@@ -139,20 +189,40 @@ function App() {
       <main>
         <Hero />
 
-        <div id="skills">
+        <div id="skills" className="reveal">
           <Skills />
         </div>
 
-        <section id="proyectos" className="section-proyectos">
-          <h2 className="section-title">{t("projects_title")}</h2>
+        <section id="proyectos" className="section-proyectos reveal">
+          <h2 className="section-title">{t("projects_featured_title")}</h2>
           <div className="grid">
-            {proyectos.map((p, index) => (
+            {featuredProjects.map((p, index) => (
+              <ProjectCard key={index} {...p} />
+            ))}
+          </div>
+          
+          <h2 className="section-title" style={{ marginTop: "4rem" }}>{t("projects_others_title")}</h2>
+          <div className="grid">
+            {otherProjects.map((p, index) => (
               <ProjectCard key={index} {...p} />
             ))}
           </div>
         </section>
+
+        <div className="reveal">
+          <Diplomas />
+        </div>
       </main>
-      <footer id="footer" className="footer">
+
+      <button 
+        className={`backToTop ${showScroll ? "show" : ""}`} 
+        onClick={scrollToTop}
+        aria-label="Back to top"
+      >
+        <FaArrowUp />
+      </button>
+
+      <footer id="footer" className="footer reveal">
         <div className="social-links">
           <a
             href="https://github.com/JoacoSperatti"

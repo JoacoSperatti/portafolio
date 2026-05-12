@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Hero.module.css";
 import fotoPerfil from "../assets/fotoPerfil.jpg";
 import { useTranslation, Trans } from "react-i18next";
 
 const Hero = () => {
   const { t } = useTranslation();
+  const [displayText, setDisplayText] = useState("");
+  const fullText = t("hero_subtitle");
+
+  useEffect(() => {
+    let i = 0;
+    let currentText = "";
+    setDisplayText("");
+    
+    const typingInterval = setInterval(() => {
+      if (i < fullText.length) {
+        currentText += fullText.charAt(i);
+        setDisplayText(currentText);
+        i++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, 40);
+
+    return () => clearInterval(typingInterval);
+  }, [fullText]);
 
   return (
     <section className={styles.hero}>
@@ -13,7 +33,10 @@ const Hero = () => {
         <h1 className={styles.title}>
           Joaquín <span className={styles.accent}>Speratti</span>
         </h1>
-        <p className={styles.subtitle}>{t("hero_subtitle")}</p>
+        <p className={`${styles.subtitle} notranslate`}>
+          {displayText}
+          <span className={styles.cursor}>|</span>
+        </p>
         <p className={styles.description}>
           <Trans i18nKey="hero_desc">
             Apasionado por la eficiencia de <strong>React</strong> para el
