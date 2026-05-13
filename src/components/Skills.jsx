@@ -51,7 +51,7 @@ const Skills = () => {
 
   return (
     <section className={styles.skillsSection}>
-      <h2 className={styles.heading}>{t("skills_title")}</h2>
+      <h2 className="section-title">{t("skills_title")}</h2>
       <div className={styles.grid}>
         {categories.map((cat, idx) => (
           <div key={idx} className={styles.categoryCard}>
