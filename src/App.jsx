@@ -82,7 +82,7 @@ const getProjects = (t) => [
     ],
     image: imgcuackkStore,
     git: "https://github.com/JoacoSperatti/cuackkStore",
-    page: "https://cuackk-store-git-main-joacospees-projects.vercel.app/",
+    page: "https://cuackk-store.vercel.app/",
     featured: true,
   },
   {
