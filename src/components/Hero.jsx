@@ -50,7 +50,7 @@ const Hero = () => {
             {t("hero_view_projects")}
           </a>
           <a
-            href="/cv_joaquin_speratti.pdf"
+            href="/CV_JOAQUÍN_SPERATTI.pdf"
             className={styles.secondaryBtn}
             download
           >
