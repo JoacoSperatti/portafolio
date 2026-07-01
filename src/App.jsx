@@ -21,6 +21,7 @@ const getProjects = (t) => [
     desc: t("project_hfquimica_desc"),
     tech: [
       "React JS + Vite",
+      "Firestore (Firebase)",
       "Tailwind CSS",
       "React Router Dom",
       "Framer Motion",
