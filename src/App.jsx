@@ -11,10 +11,26 @@ import imgcuackkStore from "./assets/cuackkStore.jpg";
 import imgsistContBomb from "./assets/sistContBomb.jpg";
 import imgIslaNerga from "./assets/IslaNegra.jpg";
 import imgMiuccha from "./assets/Miuccha.jpg";
+import imgHFQuimica from "./assets/hfquimica.jpg";
 import { FaGithub, FaInstagram, FaWhatsapp, FaEnvelope, FaArrowUp } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 const getProjects = (t) => [
+  {
+    titulo: t("project_hfquimica_title"),
+    desc: t("project_hfquimica_desc"),
+    tech: [
+      "React JS + Vite",
+      "Tailwind CSS",
+      "React Router Dom",
+      "Framer Motion",
+      "React Icons",
+    ],
+    image: imgHFQuimica,
+    git: "https://github.com/JoacoSperatti/HF",
+    page: "https://hfquimica.vercel.app/#",
+    featured: true,
+  },
   {
     titulo: t("project_IslaNegra_title"),
     desc: t("project_IslaNegra_desc"),

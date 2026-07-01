@@ -35,7 +35,7 @@ const Hero = () => {
         </h1>
         <p className={`${styles.subtitle} notranslate`}>
           {displayText}
-          <span className={styles.cursor}>|</span>
+          <span className={styles.cursor}></span>
         </p>
         <p className={styles.description}>
           <Trans i18nKey="hero_desc">

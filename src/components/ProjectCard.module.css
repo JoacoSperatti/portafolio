@@ -16,6 +16,13 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(136, 192, 208, 0.1);
 }
 
+.title {
+  min-height: 55px; /* Reserves space for roughly 2 lines of text */
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
 .techStack {
   display: flex;
   gap: 10px;

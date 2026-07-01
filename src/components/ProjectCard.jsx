@@ -6,7 +6,7 @@ const ProjectCard = ({ titulo, desc, tech, image, git, page }) => {
 
   return (
     <article className={styles.card}>
-      <h3>{titulo}</h3>
+      <h3 className={styles.title}>{titulo}</h3>
       
       <div className={styles.projectExample}>
         {image && <img src={image} alt={`Captura de ${titulo}`} className={styles.projectImage} />}

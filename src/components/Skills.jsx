@@ -2,10 +2,10 @@ import React from "react";
 import styles from "./Skills.module.css";
 import { useTranslation } from "react-i18next";
 import { 
-  FaReact, FaHtml5, FaSass, FaNodeJs, FaPython, FaJs, FaLanguage 
+  FaReact, FaHtml5, FaSass, FaNodeJs, FaPython, FaJs, FaLanguage, FaTerminal
 } from "react-icons/fa";
 import { 
-  SiCssmodules, SiTailwindcss, SiCplusplus, SiFirebase, SiSupabase, SiElectron, SiHostinger 
+  SiCssmodules, SiTailwindcss, SiCplusplus, SiFirebase, SiElectron, SiHostinger, SiArchlinux, SiUbuntu 
 } from "react-icons/si";
 
 const Skills = () => {
@@ -16,6 +16,7 @@ const Skills = () => {
       title: t("skills_frontend"),
       items: [
         { name: "React", icon: <FaReact /> },
+        { name: "Node.js", icon: <FaNodeJs /> },
         { name: "CSS Modules", icon: <SiCssmodules /> },
         { name: "HTML5", icon: <FaHtml5 /> },
         { name: "Tailwind CSS", icon: <SiTailwindcss /> },
@@ -25,7 +26,6 @@ const Skills = () => {
     {
       title: t("skills_backend"),
       items: [
-        { name: "Node.js", icon: <FaNodeJs /> },
         { name: "C++", icon: <SiCplusplus /> },
         { name: "Python", icon: <FaPython /> },
         { name: "JavaScript", icon: <FaJs /> },
@@ -35,9 +35,11 @@ const Skills = () => {
       title: t("skills_db"),
       items: [
         { name: "Firestore", icon: <SiFirebase /> },
-        { name: "Supabase", icon: <SiSupabase /> },
         { name: "Hostinger", icon: <SiHostinger /> },
         { name: "Electron JS", icon: <SiElectron /> },
+        { name: "Antigravity CLI", icon: <FaTerminal /> },
+        { name: "Arch Linux", icon: <SiArchlinux /> },
+        { name: "Ubuntu", icon: <SiUbuntu /> },
       ],
     },
     {
