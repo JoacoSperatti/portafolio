@@ -12,10 +12,64 @@ import imgsistContBomb from "./assets/sistContBomb.jpg";
 import imgIslaNerga from "./assets/IslaNegra.jpg";
 import imgMiuccha from "./assets/Miuccha.jpg";
 import imgHFQuimica from "./assets/hfquimica.jpg";
+import imgKench from "./assets/kench.jpg";
+import imgVacuum from "./assets/vacuum.jpg";
+import imgExtintores from "./assets/extintores.jpg";
+import imgGastronomia from "./assets/gastronomia.jpg";
 import { FaGithub, FaInstagram, FaWhatsapp, FaEnvelope, FaArrowUp } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 const getProjects = (t) => [
+  {
+    titulo: t("project_kench_title"),
+    desc: t("project_kench_desc"),
+    tech: [
+      "React JS + Vite",
+      "TypeScript",
+      "Tailwind CSS",
+      "Firebase",
+      "Zustand"
+    ],
+    image: imgKench,
+    git: "https://github.com/JoacoSperatti/kench",
+    page: "https://kench-sigma.vercel.app/",
+    featured: true,
+  },
+  {
+    titulo: t("project_vacuum_title"),
+    desc: t("project_vacuum_desc"),
+    tech: [
+      "React JS + Vite",
+      "React Router Dom",
+      "CSS3"
+    ],
+    image: imgVacuum,
+    git: "https://github.com/JoacoSperatti/vacuum",
+    page: "https://vacuum-red.vercel.app/",
+    featured: true,
+  },
+  {
+    titulo: t("project_extintores_title"),
+    desc: t("project_extintores_desc"),
+    tech: [
+      "React JS + Vite",
+      "Electron JS",
+      "Firebase"
+    ],
+    image: imgExtintores,
+    featured: true,
+  },
+  {
+    titulo: t("project_gastronomia_title"),
+    desc: t("project_gastronomia_desc"),
+    tech: [
+      "React JS + Vite",
+      "Electron JS",
+      "Tailwind CSS"
+    ],
+    image: imgGastronomia,
+    featured: true,
+  },
   {
     titulo: t("project_hfquimica_title"),
     desc: t("project_hfquimica_desc"),
@@ -130,7 +184,7 @@ const getProjects = (t) => [
     image: imgGestorTareas,
     git: "https://github.com/JoacoSperatti/Proyecto-JavaScript",
     page: "https://proyecto-java-script-peach.vercel.app/",
-  },
+  }
 ];
 
 function App() {
