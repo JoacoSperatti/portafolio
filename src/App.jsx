@@ -5,6 +5,7 @@ import ProjectCard from "./components/ProjectCard";
 import Diplomas from "./components/Diplomas";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import "./App.css";
+import imgArtePolo from "./assets/ArtePolo.jpg";
 import imgPowerFit from "./assets/powerFit.jpg";
 import imgGestorTareas from "./assets/gestorTareas.jpg";
 import imgcuackkStore from "./assets/cuackkStore.jpg";
@@ -20,6 +21,22 @@ import { FaGithub, FaInstagram, FaWhatsapp, FaEnvelope, FaArrowUp } from "react-
 import { useTranslation } from "react-i18next";
 
 const getProjects = (t) => [
+  {
+    titulo: t("project_artepolo_title"),
+    desc: t("project_artepolo_desc"),
+    tech: [
+      "React JS + Vite",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Firebase",
+      "Lucide React"
+    ],
+    image: imgArtePolo,
+    git: "https://github.com/JoacoSperatti/ArtePolo",
+    page: "https://arte-polo.vercel.app/",
+    featured: true,
+  },
   {
     titulo: t("project_kench_title"),
     desc: t("project_kench_desc"),
