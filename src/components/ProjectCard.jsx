@@ -18,29 +18,31 @@ const ProjectCard = ({ titulo, desc, tech, image, git, page }) => {
         {tech.map(t => <span key={t} className={styles.tag}>{t}</span>)}
       </div>
 
-      <div className={styles.actions}>
-        {git && (
-          <a 
-            href={git} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className={styles.gitBtn}
-          >
-            {t("view_code")}
-          </a>
-        )}
-        
-        {page && (
-          <a 
-            href={page} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className={styles.linkBtn}
-          >
-            {t("visit_site")}
-          </a>
-        )}
-      </div>
+      {(git || page) && (
+        <div className={styles.actions}>
+          {git && (
+            <a 
+              href={git} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className={styles.gitBtn}
+            >
+              {t("view_code")}
+            </a>
+          )}
+          
+          {page && (
+            <a 
+              href={page} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className={styles.linkBtn}
+            >
+              {t("visit_site")}
+            </a>
+          )}
+        </div>
+      )}
     </article>
   );
 };

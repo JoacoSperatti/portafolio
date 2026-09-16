@@ -150,8 +150,6 @@ const getProjects = (t) => [
       "SheetJS (XLSX)",
     ],
     image: imgsistContBomb,
-    git: "https://github.com/JoacoSperatti/sistContBomb",
-    page: "https://drive.google.com/drive/folders/1FtdHFM-hULwzY2JDPwLXIxPYmwt0KwBT?usp=drive_link",
     featured: true,
   },
   {
